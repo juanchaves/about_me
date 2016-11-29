@@ -11,3 +11,5 @@ if (response1 === 'yes' || response1 === 'y') {
 } else {
   alert ('You fail to understand yes/no questions so that is as good as wrong. <br/> You Lose!');
 }
+
+//Useful and descriptive console.log() messages in the JS are well written and correctly displaying to the browser console for each question of the guessing game.
