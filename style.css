@@ -1,6 +1,17 @@
 * {
   color: black;
   font-family: sans-serif;
+  text-align: left;
+}
+
+a{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a:hover{
+  background-color: black;
+  color: white;
 }
 
 nav ul {
@@ -17,15 +28,12 @@ nav li{
 
 nav li a {
     display: inline;
-    color: white
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
 }
 
-/*nav li a:hover{
-  background-color: cyan;
-  color: black;
+#salutation {
+  text-transform:capitalize;
 }
 
 footer ul{
@@ -34,18 +42,9 @@ footer ul{
   list-style-type: none;
 }
 
-footer ul li{
-  text-decoration: none;
-  text-align: center;
-  list-style-type: none;
-}*/
-
 footer ul li {
   text-decoration: none;
   text-align: center;
   list-style-type: none;
   padding-top: 18px 24px;
-}
-#salutation {
-  text-transform:capitalize;
 }
