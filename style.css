@@ -1,4 +1,11 @@
 * {
   outline: 1px dotted orange;
-  color: blue;
+  color: black;
+}
+
+footer{
+  text-decoration: none;
+}
+#salutation {
+  text-transform:capitalize;
 }
