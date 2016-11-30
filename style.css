@@ -1,5 +1,4 @@
 * {
-  outline: 1px dotted orange;
   color: black;
   font-family: sans-serif;
 }
@@ -24,13 +23,28 @@ nav li a {
     text-decoration: none;
 }
 
-nav li a:hover{
+/*nav li a:hover{
   background-color: cyan;
   color: black;
 }
 
-footer{
+footer ul{
   text-decoration: none;
+  text-align: center;
+  list-style-type: none;
+}
+
+footer ul li{
+  text-decoration: none;
+  text-align: center;
+  list-style-type: none;
+}*/
+
+footer ul li {
+  text-decoration: none;
+  text-align: center;
+  list-style-type: none;
+  padding-top: 18px 24px;
 }
 #salutation {
   text-transform:capitalize;
