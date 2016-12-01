@@ -1,6 +1,6 @@
 'use strict';
 
-// The questions in the guessing game must require a mix of yes/no answers, and user input must accept either y/n or yes/no responses, with either .toUpperCase() or .toLowerCase() used to validate the user input and accommodate users entering all-caps Y/N or YES/NO answers, too.
+alert ('Instructions here to play the game');
 
 var userName = prompt('What\'s your name?').toLowerCase();
 document.getElementById('salutation').innerHTML = 'Hello ' + userName + ' !';
@@ -11,9 +11,11 @@ if (document.getElementById('aboutme')) {
 
 //   var response1 = prompt('Can you guess what my favorite movies are? (Yes/No)').toLowerCase();
 //   console.log('Can the user guess my favorite movies: ' + response1);
+  var correctAnswers = 0;
 //
 //   if (response1 === 'yes' || response1 === 'y') {
 //     alert('Yes, I love Fight Club, Trainspotting, Inglorious Basterds, and more!');
+//     correctAnswers += 1;
 //   } else if (response1 === 'no' || response1 === 'n'){
 //     alert('That\'s ok. You can learn what they are in a bit.');
 //   } else {
@@ -25,6 +27,7 @@ if (document.getElementById('aboutme')) {
 //
 //   if (response2 === 'yes' || response2 === 'y') {
 //     alert('Yes, I love It\'s Always Sunny in Philadelphia, Archer, Rick and Morty, and more!');
+//     correctAnswers += 1;
 //   } else if (response2 === 'no' || response2 === 'n'){
 //     alert('That\'s ok. You can learn what they are in a bit.');
 //   } else {
@@ -36,6 +39,7 @@ if (document.getElementById('aboutme')) {
 //
 //   if (response3 === 'yes' || response3 === 'y') {
 //     alert('Yes, I love The Lord of the Rings Trilogy, The Hobbit, and The Silmarillion, The Harry Potter Series, Ender\'s Game and Series, and more!');
+//     correctAnswers += 1;
 //   } else if (response3 === 'no' || response3 === 'n'){
 //     alert('That\'s ok. You can learn what they are in a bit.');
 //   } else {
@@ -47,6 +51,7 @@ if (document.getElementById('aboutme')) {
 //
 //   if (response4 === 'yes' || response4 === 'y') {
 //     alert('Yes, I love Dungeons and Dragons (D&D) related things (i.e. books, blurbs, etc.), Critical Role -online D&D adventure (Twitch Show), Random/Useless information acquired by following "internet rabbit-holes", and more!');
+//     correctAnswers += 1;
 //   } else if (response4 === 'no' || response4 === 'n'){
 //     alert('That\'s ok. You can learn what they are in a bit.');
 //   } else {
@@ -72,6 +77,7 @@ if (document.getElementById('aboutme')) {
 //       alert('Your number it greater than the answer!');
 //     } else if (response6 === 26) {
 //       alert('You\'re right, chickens take ' + response6 + ' hours to lay one egg!');
+//     correctAnswers += 1;
 //     } else if (isNaN(response6)) {
 //       alert('Hey! Don\'t be a smartass!');
 //     } else {
@@ -87,7 +93,7 @@ if (document.getElementById('aboutme')) {
   var responseCountriesBreak = false;
   counter = 0;
 
-  while(counter <= 6 && responseCountriesBreak === false){
+  while(counter < 6 && responseCountriesBreak === false){
     responseCountries = prompt('Can you guess the countries I have traveled to?\nYou have 6 tries.\nTip: Use the correct names').toUpperCase();
 
 
@@ -97,14 +103,17 @@ if (document.getElementById('aboutme')) {
         console.log(countries[i]);
         responseCountriesBreak = true;
         alert ('Hey, ' + userName + ' you guessed one out of: ' + countries.length + '\nHere are the other places I have been: ' + countries);
+        correctAnswers += 1;
         var showCountriesAsString = countries.join(' , ')
         document.getElementById('salutation').innerHTML = 'Hey ' + userName + ' these are other places I have been to: ' + showCountriesAsString.toString();
+        if(responseCountries === !countries[i]){
+          alert ('Sorry ' + userName + ', you\'re wrong! \nTry again!');
+        }
       }
     }
     counter += 1;
     console.log(counter + '= counter');
-    alert ('You have: ' + (6 - counter) + ' more tries!');
-  }
+    alert ('Sorry ' + userName + ', you\'re wrong! \nTry again!\nYou have: ' + (6 - counter) + ' more tries!');
 }
 
 //document.write ('A: The average hen lays one egg approximately every 26 hours, which is about 265 eggs per year.');
