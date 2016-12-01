@@ -24,6 +24,7 @@ function questionOne(){
     alert ('Sorry, you gotta answer yes or no. \n You Lose :,-(');
   }
 }
+questionOne();
 
 //Question 2
 function questionTwo(){
@@ -39,6 +40,7 @@ function questionTwo(){
     alert ('Sorry, you gotta answer yes or no. \n You Lose :,-(');
   }
 }
+questionTwo();
 
 // Question 3
 function questionThree(){
@@ -54,6 +56,7 @@ function questionThree(){
     alert ('Sorry, you gotta answer yes or no. \n You Lose :,-(');
   }
 }
+questionThree();
 
 // Question 4
 function questionFour() {
@@ -69,6 +72,7 @@ function questionFour() {
     alert ('Sorry, you gotta answer yes or no. \n You Lose :,-(');
   }
 }
+questionsFour();
 
 //Question 5
 function questionFive () {
@@ -81,6 +85,7 @@ function questionFive () {
     document.write('That\'s ok, you don\'t wanna share, I understand.');
   }
 }
+questionFive();
 
 //Question 6
 function questionSix() {
@@ -105,6 +110,7 @@ function questionSix() {
     alert('BTW chickens take 26 hours to lay one egg!');
   }
 }
+questionSix();
 
   //Question 7
   function questionSeven() {
@@ -136,6 +142,7 @@ function questionSix() {
     alert ('Sorry ' + userName + ', you\'re wrong! \nTry again!\nYou have: ' + (6 - counter) + ' more tries!');
 }
 }
+questionSeven();
 
 //document.write ('A: The average hen lays one egg approximately every 26 hours, which is about 265 eggs per year.');
 //Useful and descriptive console.log() messages in the JS are well written and correctly displaying to the browser console for each question of the guessing game.
