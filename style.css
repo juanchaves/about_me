@@ -1,7 +1,12 @@
 * {
+  border: 1px dashed black;
   color: black;
   font-family: sans-serif;
   text-align: left;
+}
+
+h3{
+  padding-left: 1em;
 }
 
 a{
@@ -34,6 +39,12 @@ nav li a {
 
 #salutation {
   text-transform:capitalize;
+  padding-left: 0em;
+}
+
+p {
+  padding: 5px;
+  width: 98% center;
 }
 
 footer ul{
