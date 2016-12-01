@@ -2,9 +2,9 @@
 
 // The questions in the guessing game must require a mix of yes/no answers, and user input must accept either y/n or yes/no responses, with either .toUpperCase() or .toLowerCase() used to validate the user input and accommodate users entering all-caps Y/N or YES/NO answers, too.
 
-// var userName = prompt('What\'s your name?').toLowerCase();
-// document.getElementById('salutation').innerHTML = 'Hello ' + userName + ' !';
-// console.log('User\'s name is: ' + userName);
+var userName = prompt('What\'s your name?').toLowerCase();
+document.getElementById('salutation').innerHTML = 'Hello ' + userName + ' !';
+console.log('User\'s name is: ' + userName);
 
 
 if (document.getElementById('aboutme')) {
@@ -84,29 +84,26 @@ if (document.getElementById('aboutme')) {
   //Question 7
   var countries = ['US', 'ENGLAND', 'FRANCE', 'BELGIUM', 'NETHERLAND', 'GERMANY','ITALY', 'HUNGARY', 'CZECH REPUBLIC', 'ISRAEL', 'CHINA', 'THAILAND', 'CAMBODIA', 'KOREA'];
   var responseCountries = 0;
-  var responseCountriesTrue = true
+  var responseCountriesBreak = false;
   counter = 0;
-  var tallyNum= 0;
 
-  while(counter < 6){
-    responseCountries = prompt('Can you guess the countries I have traveled to?\nTip: Use the correct names').toUpperCase();
+  while(counter <= 6 && responseCountriesBreak === false){
+    responseCountries = prompt('Can you guess the countries I have traveled to?\nYou have 6 tries.\nTip: Use the correct names').toUpperCase();
 
 
     for (var i = 0; i < countries.length; i++) {
 
       if(responseCountries === countries[i]) {
         console.log(countries[i]);
-        alert ('Hey, you guessed one! \nHere are the other places I have been: ' + countries);
-        counter = 9;
-        break;
-
+        responseCountriesBreak = true;
+        alert ('Hey, ' + userName + ' you guessed one out of: ' + countries.length + '\nHere are the other places I have been: ' + countries);
+        var showCountriesAsString = countries.join(' , ')
+        document.getElementById('salutation').innerHTML = 'Hey ' + userName + ' these are other places I have been to: ' + showCountriesAsString.toString();
       }
-
-      counter += 1;
-
     }
-
-
+    counter += 1;
+    console.log(counter + '= counter');
+    alert ('You have: ' + (6 - counter) + ' more tries!');
   }
 }
 
