@@ -1,12 +1,40 @@
 * {
-  border: 1px dashed black;
-  color: black;
+  border: 1px dashed white;
   font-family: sans-serif;
-  text-align: left;
+  font-weight: 100;
+  color: #f0eceb;
 }
 
-h3{
-  padding-left: 1em;
+body {
+  background-color: #729f98;
+  text-align: left;
+  width: 100%;
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: #aa863a;
+    display: inline;
+    position: fixed;
+    text-align: center;
+    width: 10%;
+    padding: 14px 16px;
+    z-index: 0;
+}
+
+/*nav li{
+  float:right;
+}
+
+nav li a {
+    display: inline;
+    text-align: center;
+    width: 10%;
+    padding: 14px 16px;
+    background-color: #aa863a;*/
 }
 
 a{
@@ -15,31 +43,17 @@ a{
 }
 
 a:hover{
-  background-color: black;
-  color: white;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-}
-
-nav li{
-  float:left;
-}
-
-nav li a {
-    display: inline;
-    text-align: center;
-    padding: 14px 16px;
+  background-color: #283018;
+  color: #f0eceb;
 }
 
 #salutation {
   text-transform:capitalize;
   padding-left: 0em;
+}
+
+h3{
+  padding-left: 1em;
 }
 
 p {

@@ -27,7 +27,8 @@ var globalArray = [
   ['yes','y','no','n'],//user input array = globalArray[1]
   ['Yes, I do love  ' + favoriteContent[1] + ', and more!'],//answer Correct = globalArray[2]
   ['That\'s ok. You can learn what they are in a bit.','Sorry, you gotta answer yes or no. \n You Lose :,-('], //answer Incorrect array = globalArray[3] //[0] = No // [1] = else
-  [document.getElementsByTagName('ol')[0].textContent, document.getElementsByTagName('ol')[1].textContent,document.getElementsByTagName('ol')[2].textContent, document.getElementsByTagName('ol')[3].textContent] // globalArray[4] = favoriteContent
+  [document.getElementsByTagName('ol')[0].textContent, document.getElementsByTagName('ol')[1].textContent,document.getElementsByTagName('ol')[2].textContent, document.getElementsByTagName('ol')[3].textContent], // globalArray[4] = favoriteContent
+  ['US', 'ENGLAND', 'FRANCE', 'BELGIUM', 'NETHERLAND', 'GERMANY','ITALY', 'HUNGARY', 'CZECH REPUBLIC', 'ISRAEL', 'CHINA', 'THAILAND', 'CAMBODIA', 'KOREA'] //globalArray[5] = countries
 ];
 var userInput =[];
 
