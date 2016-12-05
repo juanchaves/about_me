@@ -1,55 +1,60 @@
 * {
   border: 1px dashed white;
-  font-family: sans-serif;
-  font-weight: 100;
-  color: #f0eceb;
 }
-
 body {
   background-color: #729f98;
   text-align: left;
+  font-family: Montserrat, sans-serif;
+  font-weight: 100;
+  color: #f0eceb;
   width: 100%;
+  position: absolute;
 }
 
 nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: auto;
-    background-color: #aa863a;
-    display: inline;
-    position: fixed;
-    text-align: center;
-    width: 10%;
-    padding: 14px 16px;
-    z-index: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #aa863a;
+  text-align: center;
+  line-height: 3;
+  position: absolute;
+  width: 100%;
 }
 
-/*nav li{
-  float:right;
+nav ul li{
+  list-style-type: none;
+  display: inline;
+/*   float: right; */
 }
 
-nav li a {
-    display: inline;
-    text-align: center;
-    width: 10%;
-    padding: 14px 16px;
-    background-color: #aa863a;*/
+nav ul li a {
+  text-align: center;
+  font-weight: 700;
+  padding: 14px 16px;
+  background-color: #aa863a;
 }
 
 a{
   text-decoration: none;
   list-style-type: none;
+  color: #f0eceb;
 }
 
 a:hover{
   background-color: #283018;
   color: #f0eceb;
+  opacity: 0.7;
+  cursor: pionter;
+}
+
+.jumbotron{
+  margin-top: 1em;
 }
 
 #salutation {
   text-transform:capitalize;
-  padding-left: 0em;
+  padding-left: 0;
 }
 
 h3{
@@ -59,6 +64,13 @@ h3{
 p {
   padding: 5px;
   width: 98% center;
+}
+
+footer{
+  background-color: #283018;
+  width: 100%;
+  margin; -1em 0em 0em -0.5em;
+  padding: 100px;
 }
 
 footer ul{
